@@ -3,9 +3,10 @@
 @AbapCatalog.preserveKey: true
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'CDS de Materiales'
-@Metadata.ignorePropagatedAnnotations: true
+@Metadata.allowExtensions: true
 define view ZJMAV_CDS_MAT as select from zjmav_tb_mat
 {
+    key client as client,
     key id_art as IdArt,
     descr as Descr,
     descr2 as Descr2,

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Business Services de Materiales'
+define service ZJMAV_BS_MAT {
+  expose ZJMAV_CDS_MAT;
+}
